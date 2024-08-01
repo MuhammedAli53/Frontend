@@ -1,0 +1,18 @@
+@use "../../styles/mixins" as m;
+
+.contact{
+    .card{
+        box-shadow: 0 10px 30px -20px black;
+        border:0;
+        z-index: 1;
+
+        .card-body{
+            padding: 50px;
+        }
+    }
+
+    iframe{
+        @include m.transform(translateY(-50px));
+        margin-bottom: -50px;
+    }
+}

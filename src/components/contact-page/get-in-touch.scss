@@ -1,0 +1,16 @@
+@use "../../styles/variables" as v;
+
+.get-in-touch{
+    h2{
+        color: v.$color2;
+        margin-bottom: 50px;
+    }
+
+    .nav-link{
+        margin-bottom: 20px;
+
+        svg{
+            color: v.$color3;
+        }
+    }
+}

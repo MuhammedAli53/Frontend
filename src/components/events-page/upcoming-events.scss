@@ -1,0 +1,14 @@
+@use "../../styles/variables" as v;
+
+.upcoming-events{
+    h2{
+        display: flex;
+        justify-content: space-between;
+        color: v.$color2;
+        margin-bottom: 50px;
+    }
+
+    .swiper-slide{
+        height: auto;
+    }
+}

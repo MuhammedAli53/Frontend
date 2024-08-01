@@ -1,0 +1,30 @@
+.slider {
+  .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    width: 50%;
+    text-align: left;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+
+    p{
+        display: none;
+        @media(min-width: 768px){
+            display: block;
+        }
+    }
+
+
+    h3{
+        font-size: 1rem;
+        @media(min-width: 450px){
+            font-size: 1.5rem;
+        }
+    }
+  }
+
+
+}

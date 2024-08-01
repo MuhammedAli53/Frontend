@@ -1,0 +1,50 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.instructor-card {
+  overflow: hidden;
+
+  .card-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: v.$color1-opacity-9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: v.$color3;
+    padding: 0.7rem 0;
+    pointer-events: none;
+
+    @include m.transform(translateY(101%));
+
+    @include m.transition(transform 0.5s);
+
+    h6,
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .image {
+    overflow: hidden;
+
+    img {
+      @include m.transition(transform 0.5s);
+    }
+
+    &:hover {
+      img {
+        @include m.transform(scale(1.3));
+      }
+
+      + .card-title {
+        @include m.transform(translateY(0));
+      }
+    }
+  }
+}
